@@ -2,7 +2,7 @@
 
 ## Target Hardware
 
-* [CANtact](https://github.com/linklayer/cantact-hw) - opensource USB-CAN adapter project `make cantact`
+* [CANtact](https://github.com/linklayer/cantact-hw) - opensource USB-CAN adapter project `make cantact-16`
 * [CANable](https://canable.io/) - opensource USB-CAN adapter based on CANtact project `make canable`
 * [Entreé](https://github.com/tuna-f1sh/entree) - opensource USB-C CAN adapter based on CANable project `make entree`
 * [candleLight](https://github.com/HubertD/candleLight) - stm32f0 usb can adapter (KiCAD) `make candlelight`
