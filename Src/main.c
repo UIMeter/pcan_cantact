@@ -28,13 +28,13 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
 
   /* HSE = 16MHZ */
-#if EXTERNAL_CLOCK == 16
+#if HSE_VALUE == 16000000
   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL3;
   /* HSE = 12MHZ */
-#elif EXTERNAL_CLOCK == 12
+#elif HSE_VALUE == 12000000
   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL4;
   /* HSE = 8MHZ */
-#elif EXTERNAL_CLOCK == 8
+#elif HSE_VALUE == 8000000
   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL6;
 #else
   #error invalid HSE_VALUE
